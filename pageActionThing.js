@@ -2,7 +2,7 @@ function loadPullRequestTemplate() {
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
-      var el = document.getElementById('pull_request_body');
+      var el = document.getElementById('new_comment_field');
       if (el !== null) {
         el.innerText = xhr.responseText;
       }
