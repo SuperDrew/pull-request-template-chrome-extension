@@ -16,7 +16,7 @@ chrome.runtime.onInstalled.addListener(function() {
           new chrome.declarativeContent.PageStateMatcher({
             pageUrl: {
               hostSuffix: 'github.com',
-              urlContains: '/compare/'
+              urlContains: '/pull/'
             },
           })
         ],
